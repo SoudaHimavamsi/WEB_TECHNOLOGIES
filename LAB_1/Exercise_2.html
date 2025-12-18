@@ -5,12 +5,18 @@
         <title>Basic Contact Form</title>
     </head>
 
-    <body>
-        <h2>Contact Form</h2>
+    <body bgcolor="Grey">
+        <center>
+        <fieldset style="width: 300px ;">
+                
 
         <form >
-            <table>
-                
+            
+            <table bgcolor="lightgrey" cellpadding = "20" >
+                <thead>
+                    <tr>
+                        <th colspan="2"><h2>Contact Form</h2></th>
+                    </tr>
                 <tr>
                     <td><label for = "name">Name:</label><br></td>
                     <td><input type = "text" id = "name" name = "name" ><br><br></td>
@@ -23,16 +29,15 @@
 
                 <tr>
                     <td><label for = "message">Message:</label><br></td>
-                    <td><textarea id="output" rows="10" cols="30"></textarea><br><br></td>
+                    <td><textarea id="output" rows="5" cols="21"></textarea><br><br></td>
                 </tr>
 
                 <tr>
-                    <td><input type = "submit" value = "Submit"><br></td>
+                    <td colspan="2" align = "center " ><input type = "submit" value = "Submit"><br></td>
                 </tr>
             </table>
-            
-
-
         </form>
+        </fieldset>
+        </center>
     </body>
 </html>

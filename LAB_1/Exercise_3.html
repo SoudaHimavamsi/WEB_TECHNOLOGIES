@@ -6,33 +6,35 @@
     </head>
 
     <body>
-        <h2>Contact Form</h2>
+        <center>
+        <fieldset style="width: 400px ;">
+            <h2>Contact Form</h2>
 
         <form >
-        <table>    
+        <table >    
             <tr>
                 <td><label for = "name">Full Name:</label></td>
-                <td><input type = "text" id = "name" name = "name" ></td>
+                <td><input type = "text" id = "name" name = "name" required ></td>
             </tr>
 
             <tr>
                 <td><label for = "email"> Email:</label></td>
-                <td><input type = "email" id = "email" name = "email" ></td>
+                <td><input type = "email" id = "email" name = "email" required></td>
             </tr>
 
             <tr>
                 <td><label for = "dob" > Date of Birth:</label></td>
-                <td><input type = "date" id = "dob" name = "dob" ></td>
+                <td><input type = "date" id = "dob" name = "dob" required></td>
             </tr>
 
             <tr>
                 <td><label for ="phone">Phone Number:</label></td>
-                <td><input type = "tel" id = "phone" name = "phone" ></td>
+                <td><input type = "tel" id = "phone" name = "phone" required></td>
             </tr>
 
             <tr>
                 <td><label for = "password">Password:</label></td>
-                <td><input type = "password" id = "password" name = "password" ></td>
+                <td><input type = "password" id = "password" name = "password" required ></td>
             </tr>
 
             <tr>
@@ -42,15 +44,16 @@
 
             <tr>
                 <td><label for = "terms"> I agree to the Terms and Conditions</label><br><br></td>
-                <td><input type = "checkbox" id = "terms"></td>
+                <td><input type = "checkbox" id = "terms" required></td>
             </tr>
 
             <tr>
-                <td><input type = "submit" value = "Submit"><br></td>
+                <td colspan="2" align="center"><input type = "submit" value = "Submit"><br></td>
             </tr>
     
 
         </table>
         </form>
+        </center>
     </body>
 </html>
