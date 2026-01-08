@@ -28,10 +28,13 @@ button {
 .column {
     background: #ffffff;
     width: 250px;
-    min-height: 350px;
+    height: 380px;                 /* fixed height */
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: column;
 }
 
 .column h2 {
@@ -39,14 +42,16 @@ button {
 }
 
 .task-list {
-    background: #f9f9f9;
+    background: #ddd9d9;
     padding: 10px;
-    min-height: 280px;
     border-radius: 8px;
+    flex: 1;                       /* fill available space */
+    overflow-y: auto;             /* scroll inside if many tasks */
+    box-sizing: border-box;
 }
 
 .task {
-    background: #e0e0e0;
+    background: #b0acac;
     padding: 10px;
     margin: 8px 0;
     border-radius: 5px;
@@ -59,14 +64,13 @@ button {
 }
 
 #message {
-    display: none; /* hidden by default */
+    display: none;
     color: green;
     font-weight: bold;
     margin-top: 15px;
     transition: all 0.3s ease;
 }
 
-/* Shown only when task is completed */
 #message.show {
     display: inline-block;
     background: white;
@@ -74,4 +78,3 @@ button {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
-
