@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2 align="center">User Registration</h2>
+
+  <form id="userForm">
+    <table>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" placeholder="Enter name"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" placeholder="Enter email"></td>
+      </tr>
+      <tr>
+        <td><label for="mobile">Mobile:</label></td>
+        <td><input type="text" id="mobile" placeholder="10 digit number"></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" id="password" placeholder="Min 6 characters"></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center;">
+          <button type="submit">Register</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <button id="clearAll">Clear All Users</button>
+
+  <h2>Registered Users</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="userTable"></tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.media-section {
+    margin-top: 30px;
+}
+
+audio, video {
+    margin-top: 10px;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
