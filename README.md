@@ -1,4 +1,4 @@
-\# Web Technologies Lab Assignments
+Web Technologies Lab Assignments
 
 
 
@@ -6,11 +6,11 @@ This repository contains all my lab assignment folders with their respective cod
 
 
 
-\- \*\*Name:\*\* Souda Himavamsi  
+Name: Souda Himavamsi  
 
-\- \*\*Reg No:\*\* 23BCE8209  
+Reg No: 23BCE8209  
 
-\- \*\*Course:\*\* Web Technologies
+Course: Web Technologies
 
 
 
