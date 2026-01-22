@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multi-Stage Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Multi-Stage Registration Form</h2>
+
+    <!-- Progress Bar -->
+    <div class="progress">
+        <div id="progressBar"></div>
+    </div>
+
+    <!-- Error / Info Message -->
+    <div id="message"></div>
+
+    <form id="multiForm">
+
+        <!-- Stage 1 -->
+        <div class="stage active">
+            <h3>Stage 1: Personal Details</h3>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="number" id="age"></td>
+                </tr>
+            </table>
+            <button type="button" onclick="nextStage()">Next</button>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="stage">
+            <h3>Stage 2: Account Details</h3>
+            <table>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" id="password"></td>
+                </tr>
+            </table>
+            <button type="button" onclick="prevStage()">Back</button>
+            <button type="button" onclick="nextStage()">Next</button>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="stage">
+            <h3>Stage 3: Additional Information</h3>
+            <table>
+                <tr>
+                    <td>Course Done:</td>
+                    <td>
+                        <select id="course">
+                            <option value="">-- Select --</option>
+                            <option>Java</option>
+                            <option>Python</option>
+                            <option>Web Development</option>
+                            <option>AI & ML</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Experience Level:</td>
+                    <td>
+                        <input type="radio" name="exp" value="Beginner"> Beginner
+                        <input type="radio" name="exp" value="Intermediate"> Intermediate
+                        <input type="radio" name="exp" value="Advanced"> Advanced
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Learning Mode:</td>
+                    <td>
+                        <input type="radio" name="mode" value="Online"> Online
+                        <input type="radio" name="mode" value="Offline"> Offline
+                        <input type="radio" name="mode" value="Hybrid"> Hybrid
+                    </td>
+                </tr>
+            </table>
+
+            <button type="button" onclick="prevStage()">Back</button>
+            <button type="button" onclick="nextStage()">Next</button>
+        </div>
+
+        <!-- Stage 4 -->
+        <div class="stage">
+            <h3>Stage 4: Review & Submit</h3>
+
+            <table class="review-table">
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td id="rName"></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td id="rAge"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td id="rEmail"></td>
+                </tr>
+                <tr>
+                    <td>Course</td>
+                    <td id="rCourse"></td>
+                </tr>
+                <tr>
+                    <td>Experience</td>
+                    <td id="rExp"></td>
+                </tr>
+                <tr>
+                    <td>Learning Mode</td>
+                    <td id="rMode"></td>
+                </tr>
+            </table>
+
+            <button type="button" onclick="prevStage()">Back</button>
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #32bcdf, #5ddba0);
+}
+
+.container {
+    width: 550px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+table {
+    margin: auto;
+}
+
+td, th {
+    padding: 10px;
+}
+
+input, select {
+    padding: 6px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 9px 18px;
+    margin: 10px;
+    background: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #43a047;
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#progressBar {
+    height: 10px;
+    width: 0%;
+    background: #4CAF50;
+    border-radius: 5px;
+}
+
+#message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stage {
+    display: none;
+}
+
+.stage.active {
+    display: block;
+}
+
+.review-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.review-table th {
+    background: #4CAF50;
+    color: white;
+}
+
+.review-table td, .review-table th {
+    border: 1px solid #ccc;
+}
