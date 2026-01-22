@@ -14,8 +14,9 @@ Course: Web Technologies
 
 
 
-\## Repository Structure
+## Repository Structure
 
+```text
 WEB_TECHNOLOGIES
 │   README.md
 │
@@ -41,5 +42,6 @@ WEB_TECHNOLOGIES
     ├── Exercise_3
     ├── Exercise_4
     └── Exercise_5
+
 
 
