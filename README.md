@@ -16,61 +16,71 @@ Course: Web Technologies
 
 \## Repository Structure
 
-WEB\_TECHNOLOGIES/
-
-├── .gitattributes
-
-├── README.md
-
-├── LAB\_1/
-
-│   ├── Exercise\_1.html
-
-│   ├── Exercise\_2.html
-
-│   ├── Exercise\_3.html
-
-│   ├── Exercise\_4.html
-
-│   └── Exercise\_5.html
-
-└── LAB\_2/
-
-&nbsp;   ├── Exercise\_1/
-
-&nbsp;   │   ├── index.html
-
-&nbsp;   │   └── script.js
-
-&nbsp;   ├── Exercise\_2/
-
-&nbsp;   │   ├── index.html
-
-&nbsp;   │   ├── script.js
-
-&nbsp;   │   ├── style.css
-
-&nbsp;   │   └── media/
-
-&nbsp;   │       ├── audio.mp3
-
-&nbsp;   │       └── video.mp4
-
-&nbsp;   ├── Exercise\_3/
-
-&nbsp;   │   ├── index.html
-
-&nbsp;   │   ├── script.js
-
-&nbsp;   │   └── style.css
-
-&nbsp;   └── Exercise\_4/
-
-&nbsp;       ├── index.html
-
-&nbsp;       ├── script.js
-
-&nbsp;       └── style.css
-
-
-
+WEB_TECHNOLOGIES/
+?   .gitattributes
+?   README.md
+?   
++---LAB_1
+?       Exercise_1.html
+?       Exercise_2.html
+?       Exercise_3.html
+?       Exercise_4.html
+?       Exercise_5.html
+?       
++---LAB_2
+?   +---Exercise_1
+?   ?       index.html
+?   ?       script.js
+?   ?       
+?   +---Exercise_2
+?   ?   ?   index.html
+?   ?   ?   script.js
+?   ?   ?   style.css
+?   ?   ?   
+?   ?   +---media
+?   ?           audio.mp3
+?   ?           video.mp4
+?   ?           
+?   +---Exercise_3
+?   ?       index.html
+?   ?       script.js
+?   ?       style.css
+?   ?       
+?   +---Exercise_4
+?           index.html
+?           script.js
+?           style.css
+?           
++---LAB_3
+    +---.vscode
+    +---Exercise_1
+    ?       index.html
+    ?       script.js
+    ?       style.css
+    ?       
+    +---Exercise_2
+    ?   ?   index.html
+    ?   ?   script.js
+    ?   ?   style.css
+    ?   ?   
+    ?   +---Images
+    ?           book.jpg
+    ?           headphones.jpg
+    ?           laptop.jpg
+    ?           shirt.jpg
+    ?           
+    +---Exercise_3
+    ?       index.html
+    ?       script.js
+    ?       style.css
+    ?       
+    +---Exercise_4
+    ?       index.html
+    ?       script.js
+    ?       style.css
+    ?       
+    +---Exercise_5
+            index.html
+            script.js
+            style.css
+            
