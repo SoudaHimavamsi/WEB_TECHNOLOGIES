@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adaptive Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Adaptive Registration System</h2>
+
+  <form id="registerForm">
+    <table>
+      <tr>
+        <td><label>Name</label></td>
+        <td><input type="text" id="name"></td>
+      </tr>
+
+      <tr>
+        <td><label>Email</label></td>
+        <td><input type="email" id="email"></td>
+      </tr>
+
+      <tr>
+        <td><label>Password</label></td>
+        <td><input type="password" id="password"></td>
+      </tr>
+
+      <tr>
+        <td><label>Confirm Password</label></td>
+        <td><input type="password" id="confirmPassword"></td>
+      </tr>
+
+      <tr>
+        <td><label>Age</label></td>
+        <td><input type="number" id="age"></td>
+      </tr>
+
+      <tr>
+        <td><label>Role</label></td>
+        <td>
+          <select id="role">
+            <option value="">Select Role</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="admin">Admin</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr id="skillsDiv">
+        <td><label>Skills</label></td>
+        <td><input type="text" id="skills"></td>
+      </tr>
+
+      <tr>
+        <td colspan="2" class="center">
+          <button type="submit">Register</button>
+        </td>
+      </tr>
+    </table>
+
+    <p id="errorMsg"></p>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

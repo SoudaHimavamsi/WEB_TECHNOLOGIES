@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #fce4ec);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.products, .cart {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Products */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #f9fbff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.product-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.product-card p {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+button {
+    padding: 8px 14px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background: #3498db;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Summary */
+.summary {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.summary span {
+    float: right;
+}
+
+.minus {
+    color: #27ae60;
+}
+
+/* Coupon inside cart */
+.coupon-inline {
+    margin: 12px 0;
+}
+
+.coupon-inline input {
+    padding: 7px;
+    width: 200px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.coupon-inline p {
+    margin-top: 5px;
+    font-weight: bold;
+    color: green;
+}
+
+.summary h3 {
+    color: #c0392b;
+}

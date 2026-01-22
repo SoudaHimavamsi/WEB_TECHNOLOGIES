@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intelligent Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🛒 Intelligent Shopping Cart</h1>
+
+<!-- Products -->
+<div class="products">
+    <h2>Products</h2>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/510uTHyDqGL._AC_UF1000,1000_QL80_.jpg">
+            <h3>Laptop</h3>
+            <p>₹60000</p>
+            <button onclick="addProduct('Laptop',60000,'electronics')">Add</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/61RahTQtAqL._AC_UF1000,1000_QL80_.jpg">
+            <h3>Headphones</h3>
+            <p>₹2000</p>
+            <button onclick="addProduct('Headphones',2000,'electronics')">Add</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/81PMYea5VgL._AC_UY1100_.jpg">
+            <h3>Shirt</h3>
+            <p>₹1500</p>
+            <button onclick="addProduct('Shirt',1500,'clothing')">Add</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSKhYzD4B3VDPfAbyR0RGvFRAburCTjypjaq7pVzrYjE6GlNX02Zkfz65OtMzMth8Edm21mY-vbcaWobyCoI6REcUgNuHtYKiVEdEyQnepbrID5dD3rJhOJBg">
+            <h3>Book</h3>
+            <p>₹500</p>
+            <button onclick="addProduct('Book',500,'books')">Add</button>
+        </div>
+    </div>
+</div>
+
+<!-- Cart -->
+<div class="cart">
+    <h2>Your Cart</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="cartBody"></tbody>
+    </table>
+
+    <!-- Summary -->
+    <div class="summary">
+        <p>Subtotal: <span id="subtotal">₹0.00</span></p>
+
+        <!-- Coupon inside cart -->
+        <div class="coupon-inline">
+            <input type="text" id="couponCode" placeholder="Enter coupon code">
+            <button onclick="applyCoupon()">Apply</button>
+            <p id="couponMsg"></p>
+        </div>
+
+        <p>Electronics Discount:
+            <span class="minus" id="elecDiscount">- ₹0.00</span>
+        </p>
+
+        <p>Bulk Discount:
+            <span class="minus" id="bulkDiscount">- ₹0.00</span>
+        </p>
+
+        <p>Coupon Discount:
+            <span class="minus" id="couponDiscount">- ₹0.00</span>
+        </p>
+
+        <hr>
+
+        <h3>Grand Total:
+            <span id="grandTotal">₹0.00</span>
+        </h3>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
