@@ -16,61 +16,30 @@ Course: Web Technologies
 
 \## Repository Structure
 
-WEB\_TECHNOLOGIES/
-
-├── .gitattributes
-
-├── README.md
-
-├── LAB\_1/
-
-│   ├── Exercise\_1.html
-
-│   ├── Exercise\_2.html
-
-│   ├── Exercise\_3.html
-
-│   ├── Exercise\_4.html
-
-│   └── Exercise\_5.html
-
-└── LAB\_2/
-
-&nbsp;   ├── Exercise\_1/
-
-&nbsp;   │   ├── index.html
-
-&nbsp;   │   └── script.js
-
-&nbsp;   ├── Exercise\_2/
-
-&nbsp;   │   ├── index.html
-
-&nbsp;   │   ├── script.js
-
-&nbsp;   │   ├── style.css
-
-&nbsp;   │   └── media/
-
-&nbsp;   │       ├── audio.mp3
-
-&nbsp;   │       └── video.mp4
-
-&nbsp;   ├── Exercise\_3/
-
-&nbsp;   │   ├── index.html
-
-&nbsp;   │   ├── script.js
-
-&nbsp;   │   └── style.css
-
-&nbsp;   └── Exercise\_4/
-
-&nbsp;       ├── index.html
-
-&nbsp;       ├── script.js
-
-&nbsp;       └── style.css
-
+WEB_TECHNOLOGIES
+│   README.md
+│
+├── LAB_1
+│   ├── Exercise_1.html
+│   ├── Exercise_2.html
+│   ├── Exercise_3.html
+│   ├── Exercise_4.html
+│   └── Exercise_5.html
+│
+├── LAB_2
+│   ├── Exercise_1
+│   │   ├── index.html
+│   │   ├── script.js
+│   │   └── style.css
+│   ├── Exercise_2
+│   ├── Exercise_3
+│   └── Exercise_4
+│
+└── LAB_3
+    ├── Exercise_1
+    ├── Exercise_2
+    ├── Exercise_3
+    ├── Exercise_4
+    └── Exercise_5
 
 
