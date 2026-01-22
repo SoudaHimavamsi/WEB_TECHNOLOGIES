@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time User Activity Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>User Activity Monitor</h2>
+
+    <div class="controls">
+        <input type="text" placeholder="Focus & type here">
+        <button id="resetBtn">Reset Log</button>
+        <button id="exportBtn">Export Log</button>
+    </div>
+
+    <p id="warning"></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Event Type</th>
+                <th>Target</th>
+                <th>Key / Info</th>
+                <th>Phase</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody id="logTable">
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
