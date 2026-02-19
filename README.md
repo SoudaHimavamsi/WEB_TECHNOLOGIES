@@ -1,18 +1,10 @@
-Web Technologies Lab Assignments
-
-
+# Web Technologies Lab Assignments
 
 This repository contains all my lab assignment folders with their respective code files, kept up to date.
 
-
-
-Name: Souda Himavamsi  
-
-Reg No: 23BCE8209  
-
-Course: Web Technologies
-
-
+**Name:** Souda Himavamsi  
+**Reg No:** 23BCE8209  
+**Course:** Web Technologies
 
 ## Repository Structure
 
@@ -36,12 +28,37 @@ WEB_TECHNOLOGIES
 │   ├── Exercise_3
 │   └── Exercise_4
 │
-└── LAB_3
+├── LAB_3
+│   ├── Exercise_1
+│   ├── Exercise_2
+│   ├── Exercise_3
+│   ├── Exercise_4
+│   └── Exercise_5
+│
+├── LAB_4
+│   ├── Exercise_1
+│   ├── Exercise_2
+│   ├── Exercise_3
+│   └── Exercise_4
+│
+└── LAB_5
     ├── Exercise_1
+    │   ├── employees.xml
+    │   ├── index.html
+    │   ├── script.js
+    │   └── style.css
     ├── Exercise_2
+    │   ├── books.xml
+    │   ├── index.html
+    │   ├── script.js
+    │   └── style.css
     ├── Exercise_3
-    ├── Exercise_4
-    └── Exercise_5
-
-
-
+    │   ├── index.html
+    │   ├── script.js
+    │   ├── students.json
+    │   └── style.css
+    └── Exercise_4
+        ├── index.html
+        ├── inventory.json
+        ├── script.js
+        └── style.css
