@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Employee Management System (XML)</h2>
+    <div id="message" style="color: red; font-weight: bold; margin-bottom: 10px;"></div>
+
+    <h3>Add / Update Employee</h3>
+    <form id="empForm">
+        <input type="hidden" id="editRowIndex" value="-1"> 
+        <input type="text" id="empId" placeholder="Employee ID" required>
+        <input type="text" id="empName" placeholder="Name" required>
+        <input type="text" id="empDept" placeholder="Department" required>
+        <input type="number" id="empSalary" placeholder="Salary" required>
+        <button type="button" onclick="saveEmployee()">Save Employee</button>
+    </form>
+
+    <h3>Employee List</h3>
+    <table border="1" style="width: 100%; text-align: left; margin-top: 20px;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="empTableBody">
+            </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

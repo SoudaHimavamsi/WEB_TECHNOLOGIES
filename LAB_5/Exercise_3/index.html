@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Student Record System (JSON & Fetch API)</h2>
+    <div id="message" style="font-weight: bold; margin-bottom: 10px;"></div>
+
+    <h3>Add / Update Student</h3>
+    <form id="studentForm">
+        <input type="hidden" id="editIndex" value="-1">
+        <input type="text" id="studentId" placeholder="Student ID" required>
+        <input type="text" id="studentName" placeholder="Name" required>
+        <input type="text" id="studentCourse" placeholder="Course" required>
+        <input type="number" id="studentMarks" placeholder="Marks" required>
+        <button type="button" onclick="saveStudent()">Save Student</button>
+    </form>
+
+    <h3>Student List</h3>
+    <table border="1" style="width: 100%; text-align: left; margin-top: 20px;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Marks</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+            </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
