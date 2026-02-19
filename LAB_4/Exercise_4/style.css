@@ -1,19 +1,68 @@
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     padding: 40px;
+    background: linear-gradient(to right, #99cbfd, #7870e9);
+    text-align: center;
 }
 
+/* Heading */
+h2 {
+    color: white;
+}
+
+/* Input box */
 input {
-    padding: 8px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 220px;
 }
 
+/* Search button */
 button {
-    padding: 8px 12px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0984e3;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0652dd;
+}
+
+/* Loading + message text */
+#loading {
+    color: white;
+    font-weight: bold;
+}
+
+#message {
+    color: yellow;
+    font-weight: bold;
 }
 
 #weatherCard {
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    padding: 15px;
-    width: 250px;
+    margin: 25px auto;
+    border-radius: 10px;
+    padding: 20px;
+    width: 260px;
+    min-height: 180px;   /* keeps size constant */
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    color: #2d3436;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically center content */
+}
+
+
+/* Weather values */
+#weatherCard h3 {
+    margin-bottom: 10px;
+    color: #0984e3;
 }

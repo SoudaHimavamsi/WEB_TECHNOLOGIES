@@ -82,3 +82,12 @@ function displayWeather(data) {
         <p>Condition: ${condition}</p>
     `;
 }
+function resetCard() {
+    weatherCard.innerHTML = `
+        <h3>City Name</h3>
+        <p>Temperature: -- °C</p>
+        <p>Humidity: -- %</p>
+        <p>Condition: --</p>
+    `;
+}
+

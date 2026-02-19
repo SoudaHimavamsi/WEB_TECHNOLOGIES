@@ -83,8 +83,8 @@ function renderTable() {
             <td>${student.department}</td>
             <td>${student.marks}</td>
             <td>
-                <button onclick="editStudent('${student.id}')">Edit</button>
-                <button onclick="deleteStudent('${student.id}')">Delete</button>
+                <button class="edit-btn" onclick="editStudent('${student.id}')">Edit</button>
+                <button class="delete-btn" onclick="deleteStudent('${student.id}')">Delete</button>
             </td>
         `;
 

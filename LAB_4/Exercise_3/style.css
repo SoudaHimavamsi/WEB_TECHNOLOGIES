@@ -1,19 +1,36 @@
 body {
     font-family: Arial;
     padding: 40px;
+    align-items: center;    
+    text-align: center;
+    background-color:beige;
 }
 
 input {
     margin: 5px;
     padding: 8px;
 }
+th, td {
+    text-align: center;
+}
 
 button {
     margin: 3px;
     padding: 6px 10px;
+    background-color:deepskyblue;
 }
 
 table {
     margin-top: 20px;
     width: 80%;
+}
+
+.edit-btn {
+    background-color: rgb(0, 128, 255);
+    color: white;
+}
+
+.delete-btn {
+    background-color: rgb(255, 0, 0);
+    color: white;
 }
