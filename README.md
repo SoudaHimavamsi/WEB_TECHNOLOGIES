@@ -41,24 +41,27 @@ WEB_TECHNOLOGIES
 │   ├── Exercise_3
 │   └── Exercise_4
 │
-└── LAB_5
-    ├── Exercise_1
-    │   ├── employees.xml
-    │   ├── index.html
-    │   ├── script.js
-    │   └── style.css
-    ├── Exercise_2
-    │   ├── books.xml
-    │   ├── index.html
-    │   ├── script.js
-    │   └── style.css
-    ├── Exercise_3
-    │   ├── index.html
-    │   ├── script.js
-    │   ├── students.json
-    │   └── style.css
-    └── Exercise_4
-        ├── index.html
-        ├── inventory.json
-        ├── script.js
-        └── style.css
+├── LAB_5
+│   ├── Exercise_1
+│   │   ├── employees.xml
+│   │   ├── index.html
+│   │   ├── script.js
+│   │   └── style.css
+│   ├── Exercise_2
+│   │   ├── books.xml
+│   │   ├── index.html
+│   │   ├── script.js
+│   │   └── style.css
+│   ├── Exercise_3
+│   │   ├── index.html
+│   │   ├── script.js
+│   │   ├── students.json
+│   │   └── style.css
+│   └── Exercise_4
+│       ├── index.html
+│       ├── inventory.json
+│       ├── script.js
+│       └── style.css
+│
+└── LAB_6
+    └── WEB TECH LAB - 6.pdf
