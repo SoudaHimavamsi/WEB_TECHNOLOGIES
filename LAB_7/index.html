@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Notes Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-book-open"></i>
+                <h2>NotesManager</h2>
+            </div>
+            
+            <div class="form-card">
+                <h3 id="formTitle">Create New Note</h3>
+                <form id="noteForm">
+                    <input type="hidden" id="noteId">
+                    <div class="form-group">
+                        <label for="title">Note Title</label>
+                        <input type="text" id="title" placeholder="e.g. MongoDB Basics" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject Area</label>
+                        <input type="text" id="subject" placeholder="e.g. Database" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Note Content</label>
+                        <textarea id="description" rows="5" placeholder="Write your study notes here..." required></textarea>
+                    </div>
+                    <button type="submit" id="submitBtn">
+                        <i class="fa-solid fa-plus"></i> Save Note
+                    </button>
+                    <button type="button" id="cancelEdit" class="btn-secondary" style="display:none;">
+                        <i class="fa-solid fa-xmark"></i> Cancel Edit
+                    </button>
+                </form>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header class="top-header">
+                <div>
+                    <h1>My Study Notes</h1>
+                    <p class="subtitle">Manage and review your coursework</p>
+                </div>
+                <div class="header-profile">
+                    <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                </div>
+            </header>
+            
+            <div id="notesGrid" class="notes-grid">
+                </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
