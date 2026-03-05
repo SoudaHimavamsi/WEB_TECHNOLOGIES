@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <h2>BookFinder</h2>
+            </div>
+            
+            <div class="control-panel">
+                <div class="control-group">
+                    <h3>Search</h3>
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search by title...">
+                        <button onclick="searchBooks()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <h3>Filter by Category</h3>
+                    <select id="categoryFilter" onchange="filterCategory()">
+                        <option value="">All Categories</option>
+                        <option value="Programming">Programming</option>
+                        <option value="Design">Design</option>
+                        <option value="Business">Business</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <h3>Quick Queries</h3>
+                    <button class="action-btn" onclick="sortBooks('price')"><i class="fa-solid fa-arrow-down-1-9"></i> Sort by Price (Low-High)</button>
+                    <button class="action-btn" onclick="sortBooks('rating')"><i class="fa-solid fa-star"></i> Sort by Rating (High-Low)</button>
+                    <button class="action-btn highlight" onclick="getTopRated()"><i class="fa-solid fa-fire"></i> Top Rated Books</button>
+                    <button class="action-btn reset" onclick="resetView()"><i class="fa-solid fa-rotate-right"></i> Reset View</button>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header class="top-header">
+                <h1 id="pageTitle">Library Catalog</h1>
+            </header>
+            
+            <div id="booksGrid" class="books-grid">
+                </div>
+            
+            <div class="pagination-controls">
+                <button id="loadMoreBtn" onclick="loadMore()"><i class="fa-solid fa-angle-down"></i> Load More</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
