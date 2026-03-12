@@ -63,5 +63,15 @@ WEB_TECHNOLOGIES
 │       ├── script.js
 │       └── style.css
 │
-└── LAB_6
-    └── WEB TECH LAB - 6.pdf
+├── LAB_6
+│    └── WEB TECH LAB - 6.pdf
+│
+├── LAB_7
+│   ├── Exercise_1
+│   └── Exercise_2
+│     
+└── LAB_8
+    ├── Exercise_1
+    ├── Exercise_2
+    └── Exercise_3
+    
