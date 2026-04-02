@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #0f0f14;
+  min-height: 100vh;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  background: radial-gradient(ellipse at top, #1a1a2e 0%, #0f0f14 60%);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -1px;
+}
+
+.page-subtitle {
+  color: #6b7280;
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.student-card {
+  background: #1a1a2e;
+  border: 1px solid #2a2a3e;
+  border-radius: 20px;
+  padding: 1.8rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  animation: fadeIn 0.5s ease both;
+  cursor: pointer;
+}
+
+.student-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  border-color: #00b4a6;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.card-avatar {
+  width: 50px;
+  height: 50px;
+  background: #2a2a3e;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Syne', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.student-card:hover .card-avatar {
+  transform: scale(1.1) rotate(6deg);
+}
+
+.grade-badge {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: white;
+  font-family: 'Syne', sans-serif;
+  transition: transform 0.2s ease;
+}
+
+.student-card:hover .grade-badge {
+  transform: scale(1.1);
+}
+
+.card-name {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+  transition: color 0.2s ease;
+}
+
+.student-card:hover .card-name {
+  color: #00b4a6;
+}
+
+.card-dept {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 1.2rem;
+}
+
+.marks-bar-container { width: 100%; }
+
+.marks-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+.marks-value {
+  color: #9ca3af;
+  font-weight: 600;
+}
+
+.marks-bar-track {
+  height: 6px;
+  background: #2a2a3e;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.marks-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.8s cubic-bezier(0.22,1,0.36,1);
+}

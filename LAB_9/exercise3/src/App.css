@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Mono', monospace;
+  background: #fafaf8;
+  min-height: 100vh;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #fafaf8, #f0f0ea);
+}
+
+.counter-card {
+  background: #fff;
+  border: 2px solid #e5e5e0;
+  border-radius: 28px;
+  padding: 3.5rem 3rem;
+  text-align: center;
+  width: 340px;
+  box-shadow: 8px 8px 0 #e5e5e0;
+  animation: pop 0.4s cubic-bezier(0.22,1,0.36,1);
+}
+
+@keyframes pop {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.counter-label {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  color: #9ca3af;
+  margin-bottom: 1rem;
+}
+
+.counter-display {
+  font-family: 'DM Mono', monospace;
+  font-size: 6rem;
+  font-weight: 500;
+  line-height: 1;
+  transition: color 0.3s ease;
+  margin-bottom: 0.6rem;
+}
+
+.counter-hint {
+  font-size: 0.78rem;
+  color: #9ca3af;
+  margin-bottom: 2.5rem;
+  min-height: 1.2em;
+}
+
+.btn-row {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.btn {
+  border: 2px solid #e5e5e0;
+  border-radius: 14px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.2s ease;
+  background: white;
+}
+
+.btn:active {
+  transform: scale(0.93);
+}
+
+.btn-minus, .btn-plus {
+  width: 56px;
+  height: 56px;
+  font-size: 1.6rem;
+}
+
+.btn-reset {
+  padding: 0 1.2rem;
+  height: 56px;
+  font-size: 0.78rem;
+  letter-spacing: 1px;
+  color: #6b7280;
+}
+
+.btn-plus {
+  color: #00b4a6;
+  border-color: #00b4a6;
+}
+
+.btn-plus:hover {
+  background: #00b4a6;
+  color: white;
+  box-shadow: 4px 4px 0 #00867a;
+}
+
+.btn-minus {
+  color: #ef4444;
+  border-color: #ef4444;
+}
+
+.btn-minus:hover {
+  background: #ef4444;
+  color: white;
+  box-shadow: 4px 4px 0 #b91c1c;
+}
+
+.btn-reset:hover {
+  background: #f5f5f0;
+  box-shadow: 4px 4px 0 #e5e5e0;
+}
