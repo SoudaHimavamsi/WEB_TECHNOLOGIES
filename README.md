@@ -64,14 +64,33 @@ WEB_TECHNOLOGIES
 │       └── style.css
 │
 ├── LAB_6
-│    └── WEB TECH LAB - 6.pdf
+│   └── WEB TECH LAB - 6.pdf
 │
 ├── LAB_7
 │   ├── Exercise_1
 │   └── Exercise_2
 │     
-└── LAB_8
+├── LAB_8
+│   ├── Exercise_1
+│   ├── Exercise_2
+│   └── Exercise_3
+│
+├── LAB_09
+│   ├── exercise1
+│   ├── exercise2
+│   └── exercise3
+│
+├── LAB_10
+│   ├── exercise1
+│   ├── exercise2
+│   └── exercise3
+│
+├── LAB_11
+│   ├── Exercise_1
+│   ├── Exercise_2
+│   └── Exercise_3
+│
+└── LAB_12
     ├── Exercise_1
     ├── Exercise_2
     └── Exercise_3
-    
