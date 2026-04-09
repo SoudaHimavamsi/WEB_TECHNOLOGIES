@@ -1,0 +1,41 @@
+### To test these endpoints, first make sure you have a local MongoDB instance running at 127.0.0.1:27017
+
+### 1. Create a user (POST)
+# @name createUser
+POST http://localhost:5002/api/users
+Content-Type: application/json
+
+{
+    "name": "Jane Doe",
+    "email": "jane@example.com",
+    "age": 28
+}
+
+###
+
+### 2. Get all users (GET)
+GET http://localhost:5002/api/users
+
+###
+
+### 3. Replace {id} with the actual _id string returned from Step 1
+
+### Update a user (PUT)
+PUT http://localhost:5002/api/users/{id}
+Content-Type: application/json
+
+{
+    "name": "Jane Smith",
+    "age": 29
+}
+
+###
+
+### Get a single user by ID (GET)
+GET http://localhost:5002/api/users/{id}
+
+###
+
+### Delete a user (DELETE)
+DELETE http://localhost:5002/api/users/{id}
+

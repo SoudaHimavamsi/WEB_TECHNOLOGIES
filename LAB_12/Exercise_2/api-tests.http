@@ -1,0 +1,26 @@
+### 1. Test Public Route (Only global middleware runs)
+GET http://localhost:5001/api/public
+
+###
+
+### 2. Test Protected Route without Authorization (Blocked by requireAuth middleware)
+GET http://localhost:5001/api/protected
+
+###
+
+### 3. Test Protected Route with Authorization (Passes requireAuth middleware)
+GET http://localhost:5001/api/protected
+Authorization: Bearer secret-token
+
+###
+
+### 4. Test Admin Route with Authorization (Chained middlewares: requireAuth -> validateAdmin)
+GET http://localhost:5001/api/admin
+Authorization: Bearer secret-token
+
+###
+
+### 5. Test Admin Route with wrong role (This would need modification in middleware to test, but token passes the first step)
+# Since the hardcoded token assigns 'admin' role, this will successfully pass both middlewares.
+GET http://localhost:5001/api/admin
+Authorization: Bearer secret-token
